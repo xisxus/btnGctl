@@ -1,0 +1,225 @@
+/* =========================================================
+BASE BUTTON (COMMON)
+========================================================= */
+.btn-gctl {
+    padding: 9px 20px;
+    border: 1px solid;
+    background: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.25s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Hover (Common) */
+.btn-gctl:hover {
+    background: var(--hover-bg);
+}
+
+/* Active (Common) */
+.btn-gctl.active {
+    background: var(--main-color);
+    color: #fff;
+    border-color: var(--main-color);
+}
+
+/* Disabled */
+.btn-gctl:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* =========================================================
+SIZE FLAVORS
+========================================================= */
+.btn-sm {
+    padding: 5px 12px;
+    font-size: 11px;
+}
+
+.btn-lg {
+    padding: 12px 26px;
+    font-size: 15px;
+}
+
+/* =========================================================
+SHAPE FLAVORS
+========================================================= */
+.btn-pill {
+    border-radius: 30px;
+}
+
+.btn-square {
+    border-radius: 0;
+}
+
+/* =========================================================
+STYLE FLAVORS
+========================================================= */
+.btn-solid {
+    background: var(--main-color);
+    color: #ffffff !important;
+    
+}
+
+.btn-solid:hover {
+    filter: brightness(0.9);
+    color: black !important;
+}
+
+.btn-soft {
+    background: var(--hover-bg);
+}
+
+.btn-outline {
+    background: transparent;
+}
+
+
+/* =========================================================
+CANCEL (NEUTRAL / SOFT GRAY)
+========================================================= */
+.btn-gctl-cancel {
+    --main-color: #adb5bd;
+    --hover-bg: #f8f9fa;
+
+    color: #6c757d;
+    border-color: #adb5bd;
+    box-shadow: 0 0 0 2px rgba(173,181,189,0.25);
+}
+
+/* =========================================================
+CLOSE (STRONG NEUTRAL / DARK)
+========================================================= */
+.btn-gctl-close {
+    --main-color: #343a40;
+    --hover-bg: #f1f3f5;
+
+    color: #343a40;
+    border-color: #343a40;
+    box-shadow: 0 0 0 2px rgba(52,58,64,0.25);
+}
+
+
+
+
+/* =========================================================
+COLOR VARIANTS
+========================================================= */
+.btn-gctl-success {
+    --main-color: #875a7b;
+    --hover-bg: #f6f2f5;
+    color: #875a7b;
+    border-color: #875a7b;
+    box-shadow: 0 0 0 2px rgba(135, 90, 123, 0.15);
+}
+
+.btn-gctl-info {
+    --main-color: #0dcaf0;
+    --hover-bg: #e6f9fd;
+    color: #0dcaf0;
+    border-color: #0dcaf0;
+    box-shadow: 0 0 0 2px rgba(13, 202, 240, 0.2);
+}
+
+.btn-gctl-danger {
+    --main-color: #dc3545;
+    --hover-bg: #fdeaea;
+    color: #dc3545;
+    border-color: #dc3545;
+    box-shadow: 0 0 0 2px rgba(220, 53, 69, 0.2);
+}
+
+.btn-gctl-warning {
+    --main-color: #f0ad4e;
+    --hover-bg: #fff7e6;
+    color: #f0ad4e;
+    border-color: #f0ad4e;
+    box-shadow: 0 0 0 2px rgba(240, 173, 78, 0.2);
+}
+
+.btn-gctl-primary {
+    --main-color: #0d6efd;
+    --hover-bg: #e7f1ff;
+    color: #0d6efd;
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.2);
+}
+
+.btn-gctl-secondary {
+    --main-color: #6c757d;
+    --hover-bg: #f1f1f1;
+    color: #6c757d;
+    border-color: #6c757d;
+    box-shadow: 0 0 0 2px rgba(108, 117, 125, 0.2);
+}
+
+
+/* =========================================================
+NIGHT MODE – BASE BUTTON
+========================================================= */
+[data-bs-theme="dark"] .btn-gctl {
+background: #0f172a;
+color: #cbd5e1;
+border-color: #334155;
+}
+
+[data-bs-theme="dark"] .btn-gctl-success {
+color: #d8b4fe;
+border-color: #a855f7;
+box-shadow: 0 0 0 2px rgba(168,85,247,0.35);
+}
+
+[data-bs-theme="dark"] .btn-gctl-info {
+color: #7dd3fc;
+border-color: #38bdf8;
+box-shadow: 0 0 0 2px rgba(56,189,248,0.35);
+}
+
+[data-bs-theme="dark"] .btn-gctl-danger {
+color: #fca5a5;
+border-color: #f87171;
+box-shadow: 0 0 0 2px rgba(248,113,113,0.35);
+}
+
+[data-bs-theme="dark"] .btn-gctl-warning {
+color: #fde68a;
+border-color: #facc15;
+box-shadow: 0 0 0 2px rgba(250,204,21,0.35);
+}
+
+[data-bs-theme="dark"] .btn-gctl-primary {
+color: #93c5fd;
+border-color: #60a5fa;
+box-shadow: 0 0 0 2px rgba(96,165,250,0.35);
+}
+
+[data-bs-theme="dark"] .btn-gctl-cancel {
+color: #e5e7eb;
+border-color: #6b7280;
+box-shadow: 0 0 0 2px rgba(107,114,128,0.35);
+}
+
+[data-bs-theme="dark"] .btn-gctl-close {
+color: #f8fafc;
+border-color: #e5e7eb;
+box-shadow: 0 0 0 2px rgba(229,231,235,0.35);
+}
+
+[data-bs-theme="dark"] .btn-solid {
+background: var(--main-color);
+color: #020617;
+}
+
+[data-bs-theme="dark"] .btn-solid:hover {
+filter: brightness(1.05);
+}
+
+[data-bs-theme="dark"] .btn-soft {
+background: rgba(255,255,255,0.06);
+}
+
+
